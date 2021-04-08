@@ -1,0 +1,40 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inform
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye"
+  - text: "Have a nice day!"
+
+  utter_iamabot:
+  - text: "I am a feminist chatbot, powered by Rasa."
+
+  utter_feminism:
+  - text: "Feminism is often split into 3 waves, with a 4th wave emerging more recently, connected to the impact of technology on gender issues affecting women."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
